@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="styles.css">
+    <title>web camera</title>
+</head>
+<body>
+    <div class="products-details">
+        <div class="pro-left">
+            <img src="assets/4189ssgrMFL._AC_UY327_FMwebp_QL65_.webp">
+        </div>
+        <div class="pro-right">
+            <h4>
+                CP PLUS 3 MP Full HD Smart Wi-fi CCTV Camera | 360° Pan & Tilt | View & Talk | Motion Alert | Night Vision | SD Card (Up to 128 GB) | Alexa & OK Google | 2-Way Talk | IR Distance 10Mtr | CP-E35A
+            </h4>
+            <ul>
+                <li>
+                    Brand	=cp plus</li>
+                <li>deal price: $470.00</li>
+                <li>offer price:$370.00</li>
+                <li>you safe:$100.00</li>
+                <li></li>
+            </ul>
+            <div class="pro-button">
+                <button onclick="Buy('Web Camera')"> Buy </button>
+                <button onclick="addToCart('Web Camera')"> Add to cart </button>
+            </div>
+        </div>
+        
+    </div>
+    <script>
+        function addToCart(product) {
+                const cart = JSON.parse(localStorage.getItem('cart')) || [];
+                cart.push(product);
+                localStorage.setItem('cart', JSON.stringify(cart));
+                alert(product + ' has been added to the cart.');
+            }
+            function checkLoginStatus() {
+                const loggedIn = JSON.parse(localStorage.getItem('loggedIn')) || false;
+                if (!loggedIn) {
+                    window.location.href = 'login.html';
+                }
+            }
+        
+        
+        </script>
+</body>
+</html>

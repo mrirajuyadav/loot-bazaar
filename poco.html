@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>poco mobile</title>
+</head>
+<body>
+   
+    <div class="products-details">
+        <div class="pro-left">
+            <img src="assets/71b0T9mkV3L._AC_UY327_FMwebp_QL65_.webp">
+        </div>
+        <div class="pro-right">
+            <h4>
+                POCO C65 Pastel Blue 4GB RAM 128GB ROM
+            </h4>
+            <ul>
+                <li>
+                    Brand	=poco</li>
+                <li>deal price: $14.00</li>
+                <li>offer price:$9.00</li>
+                <li>you safe:$5.00</li>
+                <li></li>
+            </ul>
+            <div class="pro-button">
+                <button onclick="Buy('poco')"> Buy </button>
+			<button onclick="addToCart('poco')"> Add to cart </button>
+                
+            </div>
+           
+        </div>
+        
+    </div>
+    <script>
+        function addToCart(product) {
+                const cart = JSON.parse(localStorage.getItem('cart')) || [];
+                cart.push(product);
+                localStorage.setItem('cart', JSON.stringify(cart));
+                alert(product + ' has been added to the cart.');
+            }
+            function checkLoginStatus() {
+                const loggedIn = JSON.parse(localStorage.getItem('loggedIn')) || false;
+                if (!loggedIn) {
+                    window.location.href = 'login.html';
+                }
+            }
+        
+        
+        </script>
+
+</body>
+</html>

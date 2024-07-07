@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title> smart watch</title>
+</head>
+<body>
+   
+    <div class="products-details">
+        <div class="pro-left">
+            <img src="assets/71J93CGCXsL._AC_UY327_FMwebp_QL65_.webp">
+        </div>
+        <div class="pro-right">
+            <h4>
+                Fire-Boltt Ninja Call Pro Plus 1.83" Smart Watch with Bluetooth Calling, AI Voice Assistance, 100 Sports Modes IP67 Rating, 240 * 280 Pixel High Resolution (Black)
+            </h4>
+            <ul>
+                <li>
+                    Brand	=fire-bolt</li>
+                <li>deal price: $34.00</li>
+                <li>offer price:$17.00</li>
+                <li>you safe:$17.00</li>
+                
+            </ul>
+            <div class="pro-button">
+                <button onclick="Buy('smart watch')"> Buy </button>
+      <button onclick="addToCart('smart watch')"> Add to cart </button>
+            </div>
+            
+           
+        </div>
+        
+    </div>
+    <script>
+        function addToCart(product) {
+                const cart = JSON.parse(localStorage.getItem('cart')) || [];
+                cart.push(product);
+                localStorage.setItem('cart', JSON.stringify(cart));
+                alert(product + ' has been added to the cart.');
+            }
+            function checkLoginStatus() {
+                const loggedIn = JSON.parse(localStorage.getItem('loggedIn')) || false;
+                if (!loggedIn) {
+                    window.location.href = 'login.html';
+                }
+            }
+        
+        
+        </script>
+
+</body>
+</html>

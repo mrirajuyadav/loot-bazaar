@@ -1,0 +1,124 @@
+*{
+  
+    text-decoration: none;
+    background-color: aliceblue;
+    background-size: cover;
+}
+.navbar{
+    background:aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.logo a{
+    font-size: 35px;
+    font-weight: 600;
+    color: rgb(177, 199, 110);
+}
+li{
+    list-style: none;
+    display: inline-block;
+}
+li a{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+button{
+    background-color: white;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90px;
+
+}
+
+.banner-section{
+    
+    width: 100%;
+    height: 200%;
+}
+
+.category-section span{
+    
+    top: 100%;;
+}
+
+
+.category-section ul li{
+    list-style: none;
+    display: inline-flex;
+   border: 2px double black;
+}
+
+.category-section ul li img{
+    width: 200px;
+    height: 200px;
+    align-items:center;
+    position: relative;
+    margin: 5px;
+ 
+}
+.category-section ul li span{
+    width: 200px;
+    height: 200px;
+    align-items:center;
+    justify-content: center;
+    margin: 20px;
+   font-size: medium;
+}
+.category-sectio li:hover{
+    transform: scale(1.2);
+}
+
+.products ul li {
+    display: inline-flex;
+    list-style: none;
+    margin: 20px;
+}
+.category-section ul li span{
+    align-items: center;
+}
+.product-details{
+    display: flex;
+}
+.pro-left{
+    width: 100%;
+    max-width: 50%;
+    border: 1px solid black;
+    align-items: center;
+   padding-left: 10px;
+    margin: 15px;
+    
+}
+.pro-right{
+    width: 100%;
+    max-width: 50%;
+    border: 1px solid black;
+    padding-left: 10px;
+    margin: 15px;
+}
+.prio-button{
+    width: 100%;
+    border: 1px solid black;
+}
+.addbtn , .buybtn{
+    width: 10rem;
+    height: 3rem;
+    margin: 10px;
+
+}
+.addbtn{
+    background-color: orange;
+}
+.buybtn{
+    background-color:aquamarine;
+    
+}
