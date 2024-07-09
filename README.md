@@ -1,6 +1,6 @@
 Description This project is an e-commerce website built using HTML, CSS, and JavaScript. It allows users to browse products, add items to their cart, and complete purchases.
 
-Website Link:
+Website Link:https://mrirajuyadav.github.io/loot-bazaar/
 
 USER NAME: user name
 
